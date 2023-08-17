@@ -2,11 +2,14 @@ package com.digit.springBoot.SpringBootBlogApplication.ServiceImpl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.digit.springBoot.SpringBootBlogApplication.Entity.Posts;
 import com.digit.springBoot.SpringBootBlogApplication.Payload.PostDTO;
 import com.digit.springBoot.SpringBootBlogApplication.Repository.PostRepository;
 import com.digit.springBoot.SpringBootBlogApplication.Service.PostService;
 
+@Service
 public class PostServiceImpl implements PostService {
 	private PostRepository postRepository;
 	
