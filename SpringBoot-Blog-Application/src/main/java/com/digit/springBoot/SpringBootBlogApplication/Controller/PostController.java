@@ -1,5 +1,7 @@
 package com.digit.springBoot.SpringBootBlogApplication.Controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,5 +23,9 @@ public class PostController {
 	@PostMapping
 	public ResponseEntity<PostDTO> createPost(@RequestBody PostDTO postDto){
 		return new ResponseEntity<>(postService.createPost(postDto),HttpStatus.CREATED);
+	}
+	@GetMapping
+	public List<PostDTO>getAllPosts(){
+		return postService.getAllPosts();
 	}
 }
