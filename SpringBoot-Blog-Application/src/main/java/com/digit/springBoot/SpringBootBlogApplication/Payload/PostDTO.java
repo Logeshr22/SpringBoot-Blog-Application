@@ -1,8 +1,5 @@
 package com.digit.springBoot.SpringBootBlogApplication.Payload;
 
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class PostDTO {
 	Long id;
